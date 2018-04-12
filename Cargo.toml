@@ -1,0 +1,8 @@
+[package]
+name = "rhx"
+version = "0.1.0"
+authors = ["omicronns <omicronns@gmail.com>"]
+
+[dependencies]
+getopts = "0.2.17"
+hex = "0.3.1"
