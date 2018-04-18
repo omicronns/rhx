@@ -73,7 +73,7 @@ fn main() {
                     let length = match length {
                         Some(l) => std::cmp::min(l, len),
                         None => len,
-                    };
+                    } + offset;
                     let mut iter: usize = offset;
                     loop {
                         let end = std::cmp::min(iter + group, length);
@@ -96,7 +96,7 @@ fn main() {
                     let length = match length {
                         Some(l) => std::cmp::min(l, len),
                         None => len,
-                    };
+                    } + offset;
                     let mut iter: usize = offset;
                     for i in iter..length {
                         print!("{}{:02x}{}", prefix, input[i], postfix);
